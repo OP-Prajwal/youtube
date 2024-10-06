@@ -1,0 +1,75 @@
+.navigationbar{
+    display: flex;
+    justify-content:space-evenly;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+body{
+    display: flex;
+    flex-direction: column;
+   color: black;
+   margin: 0%;
+            padding: 0%;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+
+  
+img{
+    height: 300px;
+    width:350px;
+} 
+.grid h2{
+    height: auto;
+    width: auto;
+}
+
+  
+.grid *{
+    
+    margin: 0;
+    justify-content: center;
+    height: 300px;
+    width: 350px;
+    text-align: center;
+    border:solid 2px #021526;
+  
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+  
+    justify-content:center;
+    align-items: center;
+    
+
+
+}
+
+@media (min-width: 360px) and (max-width:800px) {
+ 
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+         justify-content: center;
+         align-items: center;
+         margin:20;
+         row-gap: 60px;
+           
+    }
+    
+}
+@media (min-width: 800px) and (max-width:1024px) {
+ 
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+         justify-content: center;
+         align-items: center;
+         margin:20;
+         row-gap: 60px;
+           
+    }
+    
+}
+
